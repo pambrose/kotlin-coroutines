@@ -1,4 +1,4 @@
-default: versioncheck
+default: versions
 
 clean:
 	./gradlew clean
@@ -8,8 +8,9 @@ compile: build
 build:
 	./gradlew build -xtest
 
-versioncheck:
+versions:
 	./gradlew dependencyUpdates
 
 upgrade-wrapper:
-	./gradlew wrapper --gradle-version=8.14.3 --distribution-type=bin
+	./gradlew wrapper --gradle-version=9.8.1 --distribution-type=bin
+	./gradlew wrapper --gradle-version=9.8.1 --distribution-type=bin

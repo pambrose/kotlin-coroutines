@@ -1,7 +1,7 @@
 [versions]
-kotlin = "2.2.0"
+kotlin = "2.2.21"
 coroutines = "1.10.2"
-versions = "0.52.0"
+versions = "0.66.0"
 
 [libraries]
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
